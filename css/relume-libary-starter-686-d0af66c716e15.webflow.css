@@ -1719,7 +1719,7 @@ figcaption {
 .pricing-wrapper {
     background-color: var(--accent-light);
     box-shadow: 7px 7px 7px 0 var(--accent-main);
-    border: 8px solid #000;
+    border: 8px solid #fff;
     border-radius: 1rem;
     flex-direction: column;
     justify-content: flex-start;
