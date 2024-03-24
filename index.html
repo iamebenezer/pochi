@@ -170,8 +170,36 @@
                           <div id="copy-to-clipboard" class="c2c-3 v2">
                             <div class="c2c-3-text">
                                     CA:
-                              <p id="change-txt-3" class="c2c-txt">0xD800CBe7612ad52617e9dbA2786dBECc2Fe0B766</p>
-                              <p id="change-txt-3" class="c2c-txt tablet">0xD800CBe7612ad52617<br>e9dbA2786dBECc2Fe0B766</p>
+                          
+                              <div id="copyText"  onclick="copyToClipboard()">0xD800CBe7612ad52617<br>e9dbA2786dBECc2Fe0B766</div>
+  
+                              <script src="script.js"></script>
+                          <script>
+                            function copyToClipboard() {
+  // Select the text to be copied
+  const textToCopy = document.getElementById('copyText').innerText;
+  
+  // Create a textarea element to hold the text temporarily
+  const textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  
+  // Append the textarea to the document
+  document.body.appendChild(textarea);
+  
+  // Select the text in the textarea
+  textarea.select();
+  
+  // Copy the selected text
+  document.execCommand('copy');
+  
+  // Remove the textarea
+  document.body.removeChild(textarea);
+  
+  // Alert the user that the text has been copied (optional)
+  alert('Text copied to clipboard!');
+}
+
+                          </script>
                             </div>
                           </div>
                         </div>
@@ -248,6 +276,35 @@
             </div>
           </div>
         </section>
+
+        <section class="section_layout192">
+            <div class="padding-global">
+              <div class="container-large">
+                <div class="heading-special" id="token">
+                  <h1 class="heading-1 md:text-[180px] text-[80px]" style=" font-family: head;">BUY/SWAP</h1>
+                  <h1 class="heading-1 behind-one md:text-[180px] text-[80px]" style=" font-family: head;">BUY/SWAP</h1>
+                </div>
+                <div class="padding-section-large">
+                  <div id="tokenomics-1" class="w-layout-grid pricing-grid">
+                    <div data-w-id="9a1dd760-cee8-3877-a346-b80f3744bc7e" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="pricing-wrapper">
+                    <img src="/bit.png" alt="">
+                    </div>
+                    <div data-w-id="9a1dd760-cee8-3877-a346-b80f3744bc85" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="pricing-wrapper">
+                        <img src="https://coinsult.net/wp-content/uploads/2023/02/dexview-svg.webp" alt="">
+                    </div>
+                    <div data-w-id="9a1dd760-cee8-3877-a346-b80f3744bc8b" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="pricing-wrapper last">
+                        <img src="https://asset.brandfetch.io/idwI4W-BDC/id_3gM5vGA.png" alt="">
+                    </div>
+                    <!-- <div data-w-id="9a1dd760-cee8-3877-a346-b80f3744bc8b" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="pricing-wrapper last">
+                      <h3 class="h3 v2 text-center text-white" style="color: #fff;">STAKING: 30% </h3>
+                    </div> -->
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+
         <section class="section_cta1">
           <div class="padding-global">
             <div class="container-large"></div>
